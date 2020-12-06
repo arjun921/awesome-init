@@ -1,6 +1,6 @@
 export MACHINE_NAME=$HOSTNAME-$(whoami)
 sudo apt update
-sudo apt install vim curl zsh python3-pip -y
+sudo apt install vim curl zsh unzip python3-pip -y
 
 # SSH keygen for github/gitlab
 cat /dev/zero | ssh-keygen -t ed25519 -C $MACHINE_NAME -q -N ""
